@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: n8n-start-from-zero
+    env: docker
+    plan: free
+    region: oregon
+    environment:
+      DB_TYPE: postgresdb
+      DB_POSTGRESDB_HOST: ep-lucky-scene-a8tiogev-pooler.eastus2.azure.neon.tech
+      DB_POSTGRESDB_PORT: 5432
+      DB_POSTGRESDB_DATABASE: neondb
+      DB_POSTGRESDB_USER: neondb_owner
+      DB_POSTGRESDB_PASSWORD: npg_kX5tpy4COEJQ
+      DB_POSTGRESDB_SSL_ENABLED: "true"
+
+      N8N_ENCRYPTION_KEY: "q7w+FrbNdSt+c2fyjD9iMPZKUpD+TfPoUnIscCh44kI="
+      N8N_RUNNERS_ENABLED: "false"
+
+      N8N_EDITOR_BASE_URL: "https://n8n-start-from-zero.onrender.com"
+      PORT: "5678"
+      N8N_PORT: "5678"
